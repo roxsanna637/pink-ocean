@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
 
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pink ocean</title>
+  <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADgx/0Az7bvAL2o2AD2+P8A+PX/AIBctAC9m/AA+/X/ANO+7ADn4usA+/j/APv6/AD++fkA1Lf7AKuH4gD/+P8AwKvhAOvZ/QDaxPUAsYrrAPLl/QCjeNoApHDmALiO7gDgx/4AyrPwAOLN9QDh0vIApXzdAH9ZrAD18f0A49P1AOTQ/gD59/QA9/T9AL6j3ACVg6sA+ff9ANK2+QDSvPAA07rzAPv8+gDWv/AA//73AMCh8QDWuvwA2MPzAMah8QDGo+4AyKTxAMat6AC1iuwA3M7wALapwgD26P4A9PD7ALqk1wDPsvcAu53mAJNm0wDl1vYA+Pz7APv8+wD99/4A+/r+ANbF6ADXvPoA1773AO3Z/wCKVsgAiVvFANm/+gCdeNMA7+T8ANvH9wDv7fMAyqX1AN3J9ADeze4A8+v/ALqS6gC6kfAA4876AOTV9ADl0/cA5dL9AP3u/wDRtfgA59n3AOnb/QDr3PcA/v3/AOzf9wDGo/AAnG3gAO7e/QCIXcwA3MjyAO/o9wCfedcA48v7AOPQ+AC7n+UA+fj6ANK58wDVsPwA5tv1APn/9ADTw+QA+vn9APv99wDArtMA1Lr2ANXM2wDWuvYAhVPKAOrd+wDt2P4AxLDZAIhYxwDEsdwA7eb7ANy//ADcwP8A3MjzAMiu7gCLZMcAo3fbAPHs+wDz7f4A48r5ALiP9QDNtO4Az7XxAPf1+wDk2PYA0bb0AOXW+QDSt/cA+vr4ANPB6ADSvPQA6tn5AJl3ygDWw+4A17/0ANXE8QDbvP0A2sP3ALGQ5wDJoPsAtYztAN/E+gDx5/8A8+T/AMuy6QDy6v8A4Mr6APPx+QDPq/gAzbLyAODU/QDQt+8A++3/AOXV9wDRuPIA/vP/AP32/wD7+f8A6dv3AO7R/QDVvvIAwaHtAK2S0wDXtv4ArYrfAP/5/wCwiOIA6+jxAJ9p4ADv4voA3MT7ANzC/gDJpvMA38v1AMuy6gDmv/4AzLHwAH5AygDiyvsA9uz9ANO46gDm1/UA59f1AP7v/QCqkcgA/fX9AJpr1QCulNEA69z7ANfB8wDXvfkA2b78ALGV1ADawvYA2NLnANvF9gDHrOsAspnXAN3M8ADKrvEA8+77AMyz7gDPv+UA5NT2AL6Z6QD49f4A5tf2AOfX9gDTuvEA+vj+AMKf6QD8+/4A1b70AIVVywDYzN8A//7+ANi/9wDZyO4A2b79AMSr6QDw4fkA28f0APLg/wC2kt4A3sr0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANJ0oaX+fR8GReFVKfcQP3mOiuTFRFn6NLRroTZTiW5kAaBXdl7Nd2Kgk6BIC1JrjKoovMxcHCgoDcTZB1Y8yUmGVUEam3KieOD2n5DVF0uvKdImCh3klCwptgKFfalleZBE6sUzHIm2yhmJySMYGzBvH2gwIDWeoqAu1k7jnXJAuWGC/enZuqKg+vSPgt+Yn3x8wHTsFoylAa7zCunPWrquOOXUTqia7hc+IR8WDpTdUrFeYLMjlyYSgqCFv4XBDWiivdxlCTk2bhJbDCc052x4BtteS6lOkPBRsRFYOGItmzrDRvsCcN7SBSSDpjBAcK3s/0KnZvtNPPGV8ywStSwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">
+  <style>
+    /* 커서 이미지 URL을 적용 */
+    body {
+      cursor: url('https://raw.githubusercontent.com/roxsanna637/637/main/magic_stik.cur'), auto;
+    }
+
+    /* 기타 스타일 추가 */
+    H1 {
+    font-size: 2em;
+    color: #FF9a8a;
+    margin-top: 1px; /* 제목을 아래로 내리기 위해 margin-top 추가 */
+    margin-bottom: 0; /* 제목과 그 아래 요소 사이의 간격을 줄임 */
+    }
+
+    .header {
+      display: flex;
+      flex-direction: row;
+      gap: 10px; /* H1과 뒤로가기 버튼 사이에 적당한 간격을 추가 */
+    }
+
+    form {
+      margin-top: 0; /* form과 H1 사이의 간격을 더 줄임 */
+    }
+
+    input {
+      padding: 5px 8px;
+      margin: 5px;
+      border-radius: 4px;
+      height: 10px;
+    }
+
+    button {
+      padding: 5px 8px; /* 세로 padding을 줄여서 버튼의 높이를 줄임 */
+      background-color: #FF9a8a;
+      border: none;
+      border-radius: 8px;
+      border: 1px solid #F77F7F; /* 테두리 색상을 #F77F7F로 변경 */
+      color: white;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #ffd08a;
+    }
+
+    /* 뒤로가기 버튼 */
+    button {
+      padding: 3px 8px; /* 세로 padding을 더 줄여서 버튼의 높이를 줄임 */
+      min-height: 20px;  /* 버튼의 최소 높이를 설정 */
+      max-height: 25px;  /* 버튼의 최대 높이를 설정 */
+      background-color: #FF9a8a;
+      border: none;
+      border-radius: 8px;
+      border: 1px solid #F77F7F;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px; /* 버튼을 아래로 내려줍니다 */
+    }
+    
+    #guest-list {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #f0f0f0;
+      border-radius: 8px;
+    }
+
+    .guest-list-name,
+    .guest-list-content,
+    .guest-list-created-at {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+  <H1>Clap!</H1>
+  <button id="back-button" onclick="window.location.href='profile.html'">뒤로가기</button>
+  </div>
+  
+  <form>
+    <!-- 방명록 작성자명 입력란 -->
+    <input type="text" id="guest-name" />
+    <!-- 방명록 내용 입력란 -->
+    <input type="text" id="guest-content" />
+    <!-- 방명록 전송 버튼 -->
+    <button type="button" id="guest-submit">작성</button>
+  </form>
+
+  <div id="guest-list"></div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    import {
+      query,
+      orderBy,
+      getFirestore,
+      collection,
+      getDocs,
+      addDoc,
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBGtoaAMj3ToUtrJMDPDkxNIYsh7_ydN4k",
+      authDomain: "naru-clap.firebaseapp.com",
+      projectId: "naru-clap",
+      storageBucket: "naru-clap.firebasestorage.app",
+      messagingSenderId: "953913137873",
+      appId: "1:953913137873:web:45b026d8a01aaf5c2443f0",
+      measurementId: "G-9KS8MN40GM"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    const db = getFirestore(app); // Firestore 실행
+    const guestRef = collection(db, "guests"); // 'guests' 컬렉션 불러오기
+    const q = query(guestRef, orderBy("created_at", "desc")); // 불러온 방명록 전체 목록을 최신순(작성일시 내림차순)으로 정렬
+
+    // 방명록 작성 기능
+    async function sendGuest() {
+      // 사용자가 입력한 데이터 받아오기
+      const name = await document.querySelector("#guest-name").value;
+      const content = await document.querySelector("#guest-content").value;
+
+      // Firestore에 데이터 전송
+      await addDoc(guestRef, {
+        name: name,
+        content: content,
+        created_at: new Date(),
+      });
+
+      // 입력란 초기화
+      document.querySelector("#guest-name").value = "";
+      document.querySelector("#guest-content").value = "";
+    }
+
+    // 방명록 전체 목록 표시 기능
+    async function getGuestList() {
+      // 방명록 전체 목록의 HTML 코드
+      let html = `<ul>`;
+
+      // Firestore에서 최신순으로 정렬된 목록 받아오기
+      const guestList = await getDocs(q);
+      // 화면에 출력
+      guestList.forEach((data) => {
+        // 날짜 형식 변환
+        const date = new Date(data.data().created_at.toDate());
+        const myDate = `${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일 ${date.getHours()}:${date.getMinutes()}`;
+
+        // 개별 방명록의 HTML 코드를 전체 목록 HTML 코드에 추가
+        html += `
+          <li>
+            <p class="guest-list-name">이름: ${data.data().name}</p>
+            <p class="guest-list-content">내용: ${data.data().content}</p>
+            <p class="guest-list-created-at">작성일: ${myDate}</p>
+          </li>
+        `;
+      });
+
+      html += `</ul>`;
+
+      // 방명록 전체 목록을 실제로 화면에 표시
+      document.querySelector("#guest-list").innerHTML = html;
+    }
+
+    // '작성' 버튼에 위 함수 연결
+    document.querySelector("#guest-submit").addEventListener("click", () => {
+      sendGuest();
+      getGuestList();
+    });
+
+    // 방명록 화면 첫 진입 시 전체 목록 화면에 표시
+    getGuestList();
+  </script>
+</body>
+
+</html>
