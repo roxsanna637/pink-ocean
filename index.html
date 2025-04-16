@@ -6,8 +6,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    <title>pink ocean</title>
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADgx/0Az7bvAL2o2AD2+P8A+PX/AIBctAC9m/AA+/X/ANO+7ADn4usA+/j/APv6/AD++fkA1Lf7AKuH4gD/+P8AwKvhAOvZ/QDaxPUAsYrrAPLl/QCjeNoApHDmALiO7gDgx/4AyrPwAOLN9QDh0vIApXzdAH9ZrAD18f0A49P1AOTQ/gD59/QA9/T9AL6j3ACVg6sA+ff9ANK2+QDSvPAA07rzAPv8+gDWv/AA//73AMCh8QDWuvwA2MPzAMah8QDGo+4AyKTxAMat6AC1iuwA3M7wALapwgD26P4A9PD7ALqk1wDPsvcAu53mAJNm0wDl1vYA+Pz7APv8+wD99/4A+/r+ANbF6ADXvPoA1773AO3Z/wCKVsgAiVvFANm/+gCdeNMA7+T8ANvH9wDv7fMAyqX1AN3J9ADeze4A8+v/ALqS6gC6kfAA4876AOTV9ADl0/cA5dL9AP3u/wDRtfgA59n3AOnb/QDr3PcA/v3/AOzf9wDGo/AAnG3gAO7e/QCIXcwA3MjyAO/o9wCfedcA48v7AOPQ+AC7n+UA+fj6ANK58wDVsPwA5tv1APn/9ADTw+QA+vn9APv99wDArtMA1Lr2ANXM2wDWuvYAhVPKAOrd+wDt2P4AxLDZAIhYxwDEsdwA7eb7ANy//ADcwP8A3MjzAMiu7gCLZMcAo3fbAPHs+wDz7f4A48r5ALiP9QDNtO4Az7XxAPf1+wDk2PYA0bb0AOXW+QDSt/cA+vr4ANPB6ADSvPQA6tn5AJl3ygDWw+4A17/0ANXE8QDbvP0A2sP3ALGQ5wDJoPsAtYztAN/E+gDx5/8A8+T/AMuy6QDy6v8A4Mr6APPx+QDPq/gAzbLyAODU/QDQt+8A++3/AOXV9wDRuPIA/vP/AP32/wD7+f8A6dv3AO7R/QDVvvIAwaHtAK2S0wDXtv4ArYrfAP/5/wCwiOIA6+jxAJ9p4ADv4voA3MT7ANzC/gDJpvMA38v1AMuy6gDmv/4AzLHwAH5AygDiyvsA9uz9ANO46gDm1/UA59f1AP7v/QCqkcgA/fX9AJpr1QCulNEA69z7ANfB8wDXvfkA2b78ALGV1ADawvYA2NLnANvF9gDHrOsAspnXAN3M8ADKrvEA8+77AMyz7gDPv+UA5NT2AL6Z6QD49f4A5tf2AOfX9gDTuvEA+vj+AMKf6QD8+/4A1b70AIVVywDYzN8A//7+ANi/9wDZyO4A2b79AMSr6QDw4fkA28f0APLg/wC2kt4A3sr0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANJ0oaX+fR8GReFVKfcQP3mOiuTFRFn6NLRroTZTiW5kAaBXdl7Nd2Kgk6BIC1JrjKoovMxcHCgoDcTZB1Y8yUmGVUEam3KieOD2n5DVF0uvKdImCh3klCwptgKFfalleZBE6sUzHIm2yhmJySMYGzBvH2gwIDWeoqAu1k7jnXJAuWGC/enZuqKg+vSPgt+Yn3x8wHTsFoylAa7zCunPWrquOOXUTqia7hc+IR8WDpTdUrFeYLMjlyYSgqCFv4XBDWiivdxlCTk2bhJbDCc052x4BtteS6lOkPBRsRFYOGItmzrDRvsCcN7SBSSDpjBAcK3s/0KnZvtNPPGV8ywStSwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon">
+    <title>pink ocean</title>
     <style>
       body {
         margin: 0;
@@ -18,13 +18,11 @@
         font-family: "Noto Sans KR", sans-serif;
         cursor: url('https://raw.githubusercontent.com/roxsanna637/637/main/magic_stik.cur'), auto;
       }
-        
-      .custom-cursor {
-        cursor: url('https://raw.githubusercontent.com/roxsanna637/637/main/magic_stik.cur'), auto;
+
+      img {
+        width: 47px;
+        cursor: pointer;
       }
-        img {
-          width: 47px;
-        }
 
       .word {
         font-size: 11px;
@@ -37,27 +35,153 @@
         flex-direction: column;
         align-items: center;
       }
-      
-      footer {
-        margin-top: 50px; /* 이미지+단어 아래로 여백 */
+
+      #password-box {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        animation: fadeIn 0.3s ease-in-out;
       }
-        </style>
-    </head>
-  
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes fadeOut {
+        from { opacity: 1; transform: translateY(0); }
+        to { opacity: 0; transform: translateY(10px); }
+      }
+
+      input[type="password"],
+      input[type="text"] {
+        padding: 6px 12px;
+        font-size: 11px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        transition: all 0.2s ease;
+      }
+
+      .hint {
+        font-size: 10px;
+        color: #777;
+        margin-top: 5px;
+        text-align: center;
+      }
+
+      button {
+        margin-top: 10px;
+        padding: 6px 10px;
+        background-color: #ff9a8a;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        font-size: 10px;
+        cursor: pointer;
+      }
+
+      .toggle-eye {
+        font-size: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        color: #888;
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 50px;
+      }
+
+      .shake {
+        animation: shake 0.3s;
+      }
+
+      @keyframes shake {
+        0% { transform: translateX(0px); }
+        25% { transform: translateX(-5px); }
+        50% { transform: translateX(5px); }
+        75% { transform: translateX(-5px); }
+        100% { transform: translateX(0px); }
+      }
+    </style>
+  </head>
+
   <body>
-  <div class="content">
-    <a href="profile.html">
-    <img src="https://i.imgur.com/VN0bPI8.png" alt="케이크 이미지" />
-    </a>
-    <div class="word">click here!</div>
-  </div>
-        
-      <footer>
-        <center>
+    <div class="content">
+      <img src="https://i.imgur.com/VN0bPI8.png" alt="케이크 이미지" onclick="togglePasswordBox()" />
+      <div class="word">click here!</div>
+
+      <div id="password-box">
+        <input type="password" id="password" placeholder="비밀번호 입력">
+        <div class="toggle-eye" onclick="togglePassword()">비밀번호 보기</div>
+        <div class="hint">미성년자 이용 시 법적 책임을 지지 않습니다.<br>➤ 만 18세 이상입니까? (알파벳 소문자)</div>
+        <button onclick="checkPassword()">enter</button>
+      </div>
+    </div>
+
+    <footer>
+      <center>
         <p style="font-size:10px"> ☰
           <br>ⓒ Copyright 2025. 637 all rights reserved
           <br>해당 사이트는 1920*1080 해상도에 최적화 되어 있습니다.</p>
-        </center>
-      </footer>
+      </center>
+    </footer>
+
+    <script>
+      function togglePasswordBox() {
+        const box = document.getElementById('password-box');
+        if (box.style.display === 'none' || box.style.display === '') {
+          box.style.display = 'flex';
+          box.classList.remove("fade-out");
+          box.classList.add("fade-in");
+          document.getElementById("password").focus();
+        } else {
+          box.classList.remove("fade-in");
+          box.classList.add("fade-out");
+          setTimeout(() => {
+            box.style.display = 'none';
+          }, 200);
+        }
+      }
+
+      function checkPassword() {
+        const pwInput = document.getElementById("password");
+        const pw = pwInput.value;
+        const correctPw = "yes"; // 원하는 비밀번호
+
+        if (pw === correctPw) {
+          window.location.href = "home.html";
+        } else {
+          pwInput.classList.add("shake");
+          setTimeout(() => pwInput.classList.remove("shake"), 300);
+          pwInput.value = "";
+          pwInput.focus();
+          alert("비밀번호가 틀렸습니다.");
+        }
+      }
+
+      function togglePassword() {
+        const pwInput = document.getElementById("password");
+        const toggle = document.querySelector(".toggle-eye");
+
+        if (pwInput.type === "password") {
+          pwInput.type = "text";
+          toggle.textContent = "비밀번호 숨기기";
+        } else {
+          pwInput.type = "password";
+          toggle.textContent = "비밀번호 보기";
+        }
+      }
+
+      document.addEventListener("keydown", function(e) {
+        if (e.key === "Enter") {
+          const visible = document.getElementById('password-box').style.display !== "none";
+          if (visible) checkPassword();
+        }
+      });
+    </script>
   </body>
 </html>
