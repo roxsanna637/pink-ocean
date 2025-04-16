@@ -1,0 +1,41 @@
+<!-- 뮤직 플레이어 HTML -->
+<div style="display: flex; align-items: center; gap: 10px;">
+  <!-- 축음기 이미지 (왼쪽) -->
+  <img src="https://raw.githubusercontent.com/roxsanna637/637/main/%EC%B6%95%EC%9D%8C%EA%B8%B0.png" alt="축음기" width="32" height="32">
+
+  <!-- 오디오와 버튼들 -->
+  <div>
+    <!-- loop 속성 추가 -->
+    <audio id="myAudio" loop>
+      <source src="https://www.youtube.com/embed/TAQ4vFl-5Ks" type="audio/mpeg">
+    </audio>
+
+    <!-- 재생/정지 버튼 -->
+    <button onclick="playMusic()">▶</button>
+    <button onclick="pauseMusic()">■</button>
+
+    <!-- 볼륨 조절 -->
+    <label for="volumeControl">볼륨: </label>
+    <input type="range" id="volumeControl" min="0" max="4" step="1" value="2">
+  </div>
+</div>
+
+<!-- 스크립트 -->
+<script>
+  const audio = document.getElementById("myAudio");
+  const volumeControl = document.getElementById("volumeControl");
+
+  function playMusic() {
+    audio.play();
+  }
+
+  function pauseMusic() {
+    audio.pause();
+  }
+
+  volumeControl.addEventListener("input", function () {
+    audio.volume = volumeControl.value / 4;
+  });
+
+  audio.volume = 0.5;
+</script>
