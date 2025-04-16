@@ -1,0 +1,8 @@
+<div class="layout">
+  <div class="sidebar-left" id="left-bar"></div>
+
+  <!-- 본문 영역은 자리만 마련 -->
+  <div class="main-content" id="main-placeholder"></div>
+
+  <div class="sidebar-right" id="right-bar"></div>
+</div>
